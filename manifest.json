@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "YouTube Video Downloader (Educational)",
+    "name": "yt-mp (Educational)",
     "version": "1.0",
-    "description": "Sends current YouTube URL to a backend to download the video.",
+    "description": "Download YouTube videos and audio",
     "permissions": [
         "scripting",
         "activeTab"

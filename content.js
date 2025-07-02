@@ -20,7 +20,7 @@ function createSimpleButton(text, onClick, topPx) {
 }
 
 function downloadFile(url, postData, startMsg, finishMsg, failMsg) {
-    fetch('http://localhost:5000/ping')
+    fetch('http://localhost:6969/ping')
         .then(res => {
             if (!res.ok) throw new Error('Server not available');
             alert(startMsg);
@@ -54,8 +54,6 @@ function downloadFile(url, postData, startMsg, finishMsg, failMsg) {
             a.click();
             a.remove();
             window.URL.revokeObjectURL(downloadUrl);
-
-            alert(finishMsg);
         })
         .catch(() => {
             alert('Could not connect to the server. Is it running?');
@@ -65,7 +63,7 @@ function downloadFile(url, postData, startMsg, finishMsg, failMsg) {
 window.onload = () => {
     const mp4Button = createSimpleButton('Download MP4', () => {
         downloadFile(
-            'http://localhost:5000/download/mp4',
+            'http://localhost:6969/download/mp4',
             { url: window.location.href },
             'MP4 download started!',
             'MP4 download finished!',
@@ -75,7 +73,7 @@ window.onload = () => {
 
     const mp3Button = createSimpleButton('Download MP3', () => {
         downloadFile(
-            'http://localhost:5000/download/mp3',
+            'http://localhost:6969/download/mp3',
             { url: window.location.href },
             'MP3 download started!',
             'MP3 download finished!',

@@ -83,4 +83,13 @@ window.onload = () => {
 
     document.body.appendChild(mp4Button);
     document.body.appendChild(mp3Button);
+
+    const toggleButtons = () => {
+        const isFullscreen = document.fullscreenElement !== null;
+        const display = isFullscreen ? 'none' : 'block';
+        mp4Button.style.display = display;
+        mp3Button.style.display = display;
+    };
+
+    document.addEventListener('fullscreenchange', toggleButtons);
 };

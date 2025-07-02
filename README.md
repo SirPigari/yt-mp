@@ -14,7 +14,7 @@ A downloader for YouTube videos.
 1. Clone the repository:
 
     ```bash
-    git clone <repo_url>
+    git clone https://github.com/SirPigari/yt-mp
     ```
 
 2. Install the required Python packages:

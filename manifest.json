@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Video Downloader (Educational)",
+    "version": "1.0",
+    "description": "Sends current YouTube URL to a backend to download the video.",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/watch*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": "icon.png"
+    }
+}

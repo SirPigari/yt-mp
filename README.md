@@ -1,6 +1,6 @@
 # YT-MB
 
-A downloader for YouTube videos.
+A downloader for YouTube videos.  
 **No license — public code.**
 
 ## Requirements

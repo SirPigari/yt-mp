@@ -15,7 +15,6 @@ CORS(app, origins=['https://www.youtube.com'])
 TEMP_DIR = './temp_download'
 os.makedirs(TEMP_DIR, exist_ok=True)
 
-# --- Active process counter + lock ---
 active_processes = 0
 process_lock = threading.Lock()
 

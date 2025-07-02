@@ -9,7 +9,7 @@ function createSimpleButton(text, onClick, topPx) {
     button.style.fontSize = '14px';
     button.style.border = 'none';
     button.style.borderRadius = '6px';
-    button.style.backgroundColor = '#FF0000';
+    button.style.backgroundColor = 'rgba(255, 67, 67, 0.5)';
     button.style.color = 'white';
     button.style.cursor = 'pointer';
     button.style.boxShadow = '0 2px 4px rgba(0,0,0,0.2)';
